@@ -9,4 +9,6 @@ admin.initializeApp({
   databaseURL: process.env.DATABASE_URL
 });
 
-export const db = admin.database();
+ const db = admin.database();
+ const auth=admin.auth()
+ export {db,auth}
